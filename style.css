@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Body and hero background */
+body, html {
+  height: 100%;
+  background: url('istockphoto-2165287570-612x612.webp') no-repeat center center/cover;
+  color: white;
+}
+
+/* Semi-transparent overlay */
+.hero {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: brightness(0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+/* Header styling */
+header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Netflix logo style */
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Sign In button */
+.sign-in {
+  background-color: #e50914;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in:hover {
+  background-color: #f6121d;
+}
+
+/* Content section */
+.content {
+  max-width: 650px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  max-width: 500px;
+}
+
+input[type="email"] {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #e50914;
+  border: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #f6121d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input[type="email"], button[type="submit"] {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+}
